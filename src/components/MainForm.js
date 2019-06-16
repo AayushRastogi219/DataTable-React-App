@@ -16,6 +16,12 @@ export default class MainForm extends Component{
     this.getProductDetails()
   }
 
+  componentWillUnmount(){
+    //Unsubscribe events here
+    //release the resources
+    //clear the timers
+  }
+
   getProductDetails=()=>{
     const productDetails = async ()=>{
       try{

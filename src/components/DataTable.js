@@ -4,10 +4,13 @@ import '../../node_modules/react-bootstrap-table/css/react-bootstrap-table.css'
 import PropTypes from 'prop-types'
 
 export default class DataTable extends Component{
-  constructor(props) {
-    super(props)
-  }
 
+  componentWillUnmount(){
+    //Unsubscribe events here
+    //release the resources
+    //clear the timers
+  }
+  
   isUrl = (str) => {
     try {
       new URL(str);
